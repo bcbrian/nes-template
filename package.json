@@ -13,7 +13,6 @@
   "dependencies": {
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
-    "express-handlebars": "^3.1.0",
     "husky": "^3.0.5",
     "lint-staged": "^9.4.0",
     "mysql2": "^1.6.5",
@@ -22,10 +21,17 @@
     "sequelize-cli": "^5.5.1"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
+    "eslint-config-react-app": "^5.1.0",
+    "eslint-plugin-flowtype": "^4.5.3",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "jest": "^24.9.0",
     "prettier": "^1.18.2"
   },
