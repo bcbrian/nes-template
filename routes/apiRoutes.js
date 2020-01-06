@@ -13,6 +13,17 @@ module.exports = {
       });
     });
 
+    // Get an example
+    app.get("/api/examples/:id", function(req, res) {
+      console.log({ id: req.params.id });
+      db.Example.findAll({ where: { id: req.params.id } }).then(function(
+        dbExamples
+      ) {
+        console.log(dbExamples);
+        res.json(dbExamples[0]);
+      });
+    });
+
     // Create a new example
     app.post("/api/examples", this.postExampleApi);
 
