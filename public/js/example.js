@@ -12,7 +12,6 @@ const refreshExample = function() {
   const id = params.get("id"); // "foo"
 
   API.getExample(id).then(function(data) {
-    console.log(data);
     exampleTextEl.innerHTML = data.text;
     exampleDescriptionEl.innerHTML = data.description;
   });
